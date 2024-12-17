@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metal Roofing Prompt Game</title>
+    <script src="home.js" defer></script>
+</head>
+<body>
+    <h1>Metal Roofing Prompt Game</h1>
+    <form id="promptForm">
+        <label>
+            <input type="checkbox" name="archetype" value="cost-conscious">
+            Cost-Conscious Homeowner
+        </label><br>
+        <label>
+            <input type="checkbox" name="archetype" value="quality-focused">
+            Quality-Focused Buyer
+        </label><br>
+        <label>
+            <input type="checkbox" name="archetype" value="researcher">
+            Researcher
+        </label><br>
+        <label>
+            <input type="checkbox" name="archetype" value="eco-conscious">
+            Eco-Conscious Homeowner
+        </label><br>
+        <label>
+            <input type="checkbox" name="archetype" value="storm-wary">
+            Storm-Wary Homeowner
+        </label><br>
+        <label>
+            <input type="checkbox" name="archetype" value="trend-seeker">
+            Trend-Seeker
+        </label><br><br>
+
+        <!-- Transition Type -->
+        <label for="transitionType">Select Transition Type:</label><br>
+        <input type="radio" id="metal-to-metal" name="transitionType" value="Metal to Metal" checked>
+        <label for="metal-to-metal">Metal to Metal</label><br>
+        <input type="radio" id="shingles-to-metal" name="transitionType" value="Shingles to Metal">
+        <label for="shingles-to-metal">Shingles to Metal</label><br><br>
+
+        <!-- Difficulty Dropdown -->
+        <label for="difficulty">Select Difficulty:</label>
+        <select id="difficulty" name="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Output Box -->
+    <h3>Prompt Here:</h3>
+    <textarea id="outputBox" rows="10" cols="50" readonly></textarea>
+</body>
+</html>
